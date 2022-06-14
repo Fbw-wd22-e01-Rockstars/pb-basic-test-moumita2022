@@ -50,13 +50,17 @@ isDivisible(100) ➞ true
 Use a **ternary operator** to complete this task. Create a function named "_isRaining_". If passed `true`, return "_wet day - you need an umbrella_". If passed `false`, return "_dry day - leave your umbrella at home_".
 
 ##### Example*/
-let isRaining = (skyRains) =>
+
+let isRaining = (rain) =>
+rain ? "wet day - you need an umbrella!" : "dry day - leave your umbrella at home!";
+isRaining(true); 
+/* let isRaining = (skyRains) =>
   skyRains === true || skyRains !== false
     ? console.log("wet day - you need an umbrella")
-    : console.log("dry day - leave your umbrella at home");
+    : console.log("dry day - leave your umbrella at home"); */
 
-isRaining(true); // wet day - you need an umbrella
-isRaining(false); // dry day - leave your umbrella at home
+//isRaining(true); // wet day - you need an umbrella
+//isRaining(false); // dry day - leave your umbrella at home
 
 /*isRaining(true) ➞ 'wet day - you need an umbrella'
 
